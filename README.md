@@ -1,7 +1,7 @@
 # test_tenchnique_lincoln
 ## Partie 1:
 
-Le projet est constitué des repertoires suivantes:
+Le projet est constitué des repertoires suivantes :
 
 1-bin : contient le script qui contient le pipeline demandé.
 
@@ -13,7 +13,15 @@ Le projet est constitué des repertoires suivantes:
 
 5-utils : contient les fonctions utile, réutilisable sur les fichiers et les dataframes.
 
-6-SQL : contient deux fichiers. Chaque fichier présente la réponse de la requete SQL demandée.
+6-un fichier config.py qui contient un les variables de configuration du projet.
+
+7-un repertoire .github/workflows  qui contient un fichier 
+python-app.yml pour vérifier l'exactitude du nouveau code avant son intégration
+
+8-SQL : contient deux fichiers. Chaque fichier présente la réponse de la requete SQL demandée.
+
+9-un fichier requirement pour installer tous les dépendencies nécessaire au fonctionnement 
+du projet.
 
 Le point d'entrée est le fichier bin.py du répertoire bin, qui permet de déclencher 
 le data pipeline de génération du json qui contient les relations des 
@@ -49,9 +57,10 @@ Ce module lit le fichier résultat json et retourne le journal qui a mentionné 
 * gérer les exceptions
 
 * Data processing :
-j'ai remarqué des erreurs d'encodage dans les données.
 
-Pour les lignes qui possédent des données manquantes, j'ai procédé par éliminer ces valeurs mais je pense
+1- J'ai remarqué des erreurs d'encodage dans les données.
+
+2-Pour les lignes qui possédent des données manquantes, j'ai procédé par éliminer ces valeurs mais je pense
 que corriger ces données est une meilleure solution pour éviter le risque
 de perte d'information.
 
